@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/*Paleta de cores
+    roxo: #a303b4;
+    yellow: #FAF615;
+*/
+
+/*Estilo MF(Mobile First)*/
+
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    background-color:#a303b4;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height:100vh;
+}
+section#login{
+    position: absolute;
+    top:50%;
+    left:50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    width:250px;
+    height:500px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.767);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function:ease;
+}
+
+section > div#foto{
+    background-image: url('../imagens/predio.jpg');
+    background-size: cover;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+}
+
+section > div#formulario{
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1{
+    text-align: center;
+}
+
+div#formulario > p{
+    font-size: 0.9em;
+}
+ div > span{
+    width: 40px;
+    color: white;
+    font-size: 2em;
+    height: 35px;
+    padding: 5px;
+
+ }
+
+ div.campo > input{
+    background-color:#ece93b;
+    width: calc(100% - 45px);
+    font-size:1em;
+    height: 100%;
+    transform:translateY(-4px);
+    border-radius:10px;
+    border: none;
+    padding: 4px;
+ }
+
+ div.campo > input:focus{
+    background-color: white;
+ }
+form > div.campo{
+    background-color:#a303b4;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 5px;
+    height:35px;
+}
+
+form > div > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    color: rgb(44, 44, 44);
+    background-color: #f5f126;
+    width:100%;
+    cursor: pointer;
+    height: 35px;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+form > div > input[type=submit]:hover{
+    background-color:#fffb03;
+    
+}
+
+form > div > a#botao{
+    display: block;
+    padding: 5px;
+    border: 1px solid #f5f126;
+    color:#a303b4;
+    border-radius: 5px;
+    text-align:center;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+form > div > label{
+    display: none;
+}
